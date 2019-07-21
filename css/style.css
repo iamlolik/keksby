@@ -530,7 +530,7 @@ padding: вертикальные отступы(5), горизонтальны�
 }
 
 .feedback-tip {
-    font-size: 16px;
+    /*font-size: 16px;*/
     position: absolute;
     top:0;
     right: 0;
@@ -546,14 +546,28 @@ padding: вертикальные отступы(5), горизонтальны�
 
 
 .feedback-form-group {
-    padding-top: 10px;
-    padding-bottom: 10px;
+margin-bottom: 15px;
 }
 
+.feedback-form-group-left-part {
+  float: left;
+}
 
+.feedback-form-group-right-part {
+  float: right;
+}
+
+.feedback-form-group-left-part,
+.feedback-form-group-right-part {
+  width: 290px;
+}
 .feedback-form-group label {
-    text-transform: uppercase;
-    font-size: 12px;
+  display: inline-block;
+  padding: 5px 0;
+  padding-left: 17px;
+
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 .feedback-form input[type="text"],
@@ -562,6 +576,10 @@ padding: вертикальные отступы(5), горизонтальны�
     font: inherit;
     color: inherit;
     border: 2px solid #d5d5d5;
+    width: 100%;
+    padding: 9px 15px;
+    height: 54px;
+    box-sizing: border-box;
 
 }
 
@@ -581,6 +599,32 @@ padding: вертикальные отступы(5), горизонтальны�
 
 .checkbox-area{
     border-bottom: 1px solid #d5d5d5;
+    margin-bottom: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 17px;
+}
+.checkbox-area input {
+  margin: 0;
+  margin-right: 5px;
+}
+
+.feedback-form textarea {
+  display: block;
+  min-height: 120px;
+}
+
+.feedback-form .btn {
+  margin-top: 40px;
+  background-color: #a38b70;
+  color: white;
+}
+.feedback-form .btn:hover {
+   background-color: #8d745a;
+}
+
+.feedback-form .btn:active {
+  color:  rgba(255, 255, 255, 0.3);
 }
 
 .page-footer {
@@ -596,6 +640,11 @@ padding: вертикальные отступы(5), горизонтальны�
     float: left;
     width: 205px;
     height: 55px;
+}
+
+.footer-logo img {
+  width: 205px;
+  height: 55px;
 }
 
 .footer-middle{
@@ -616,6 +665,8 @@ padding: вертикальные отступы(5), горизонтальны�
     margin-right: 20px;
 }
 .footer-menu h3 {
+    margin: 0;
+    margin-bottom: 20px;
     font-family: "Georgia", serif;
     font-size: 24px;
     font-weight: bold;
@@ -623,7 +674,13 @@ padding: вертикальные отступы(5), горизонтальны�
 }
 
 .footer-menu ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
+}
+
+.footer-menu ul li {
+  margin-bottom: 15px;
 }
 
 .footer-menu a {
@@ -645,24 +702,63 @@ padding: вертикальные отступы(5), горизонтальны�
 }
 
 .footer-social {
+  font-size: 0;
     float: left;
     width: 490px;
 }
 .footer-social b {
+  margin-right: 40px;
     font-family: "Georgia", serif;
     font-size: 24px;
     color: #a38b70;
 }
 
 .social-btn {
-    color: #ffffff;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  vertical-align: middle;
+  color: #ffffff;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-btn-vk {
+  background-position: 16px -238px;
+}
+.social-btn-fb {
+  background-position: 19px -297px;
+}
+.social-btn-in {
+  background-position: 13px -358px;
+}
+
+.social-btn:hover {
+  border-color:rgba(255, 255, 255, 0.3);
+}
+
+.social-btn:active {
+  border-color: #ffffff;
+  opacity: 0.1;
 }
 
 .footer-copyright {
+  margin-top: 17px;
   float:right;
     width: 236px;
     color: #ffffff;
     text-transform: uppercase;
+}
+
+.footer-copyright .heart {
+  display: inline-block;
+  background: url("../img/sprite.png") no-repeat -5px -419px;
+  width: 27px;
+height: 24px;
+font-size: 0;
+vertical-align: middle;
 }
 
 .footer-copyright a {
